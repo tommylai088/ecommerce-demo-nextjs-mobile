@@ -20,7 +20,7 @@ export default function ProductResults() {
             <ProductImageCarousel />
             <Flex gap="4" flexDirection="column" mt="6">
                 <Text fontSize="16px" fontWeight="600">
-                    Men's Harrington Jacket
+                    Bag
                 </Text>
                 <Text fontSize="16px" fontWeight="600">
                     $123
@@ -33,7 +33,7 @@ export default function ProductResults() {
                 color="#272727"
                 opacity="50%"
             >
-                Built for life and made to last, this full-zip corduroy jacket is part of our Nike Life collection. The spacious fit gives you plenty of room to layer underneath, while the soft corduroy keeps it casual and timeless.
+                Bag
             </Text>
             <Flex flexDirection="column" gap="3">
                 <Text fontSize="16px" fontWeight="600">

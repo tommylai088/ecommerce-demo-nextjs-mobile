@@ -78,7 +78,7 @@ export default function ProductImageCarousel({ title }: IProductImageCarouselPro
                 >
                     {productImages.map(item => (
                         <SwiperSlide key={item?.id}>
-                            <Image src={item.imageUrl} />
+                            <Image src={item.imageUrl} alt="productImage" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

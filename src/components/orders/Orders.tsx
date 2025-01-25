@@ -2,10 +2,11 @@
 
 import Navbar from "@/components/common/Navbar";
 import { route } from "@/constants/route";
-import { Box, Button, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { FaWpforms } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import OrderStatusCarousel from "./OrderStatusCarousel";
 export default function Orders() {
 
     const router = useRouter();
@@ -16,7 +17,8 @@ export default function Orders() {
                 title="Orders"
                 isHideBackBtn
             />
-            <Flex
+            <OrderStatusCarousel />
+            {/* <Flex
                 mt="10"
                 gap="3"
                 w="100%"
@@ -141,7 +143,7 @@ export default function Orders() {
                         Cancelled
                     </Text>
                 </Button>
-            </Flex>
+            </Flex> */}
             <List spacing="2">
                 <ListItem
                     onClick={() => router.push(`${route.orders}/123456`)}

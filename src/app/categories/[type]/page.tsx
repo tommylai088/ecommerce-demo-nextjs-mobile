@@ -12,7 +12,6 @@ export default async function CateogiesResultPage({
 
     return (
         <Box
-            p="6"
         >
             <Navbar isShowWishlistBtn />
             <Text

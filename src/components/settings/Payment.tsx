@@ -11,7 +11,7 @@ export default function Payment() {
     const router = useRouter();
 
     return (
-        <Box p="6">
+        <Box>
             <Navbar title="Payment" />
             <Text
                 mt="8"

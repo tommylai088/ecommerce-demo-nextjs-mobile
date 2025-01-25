@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 export default function EditWishlist() {
 
     return (
-        <Box p="6">
+        <Box>
             <Navbar title="My Favourites (12)" />
             <ProductList />
         </Box>

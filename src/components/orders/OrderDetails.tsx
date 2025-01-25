@@ -10,7 +10,8 @@ export default function OrderDetails() {
     const router = useRouter();
 
     return (
-        <Box p="6">
+        <Box
+        >
             <Navbar
                 title="Order #123456"
             />

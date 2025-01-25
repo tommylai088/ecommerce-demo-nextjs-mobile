@@ -12,7 +12,7 @@ export default function Orders() {
     const router = useRouter();
 
     return (
-        <Box p="6">
+        <Box>
             <Navbar
                 title="Orders"
                 isHideBackBtn

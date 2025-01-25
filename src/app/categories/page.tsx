@@ -8,7 +8,6 @@ export default function CateogiesPage() {
 
     return (
         <Box
-            p="6"
         >
             <Navbar />
             <Categories />

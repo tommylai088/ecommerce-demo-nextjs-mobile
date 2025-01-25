@@ -10,7 +10,7 @@ export default function Address() {
     const router = useRouter();
 
     return (
-        <Box p="6">
+        <Box>
             <Navbar title="Address" />
             <List spacing="2">
                 {address.map(item =>

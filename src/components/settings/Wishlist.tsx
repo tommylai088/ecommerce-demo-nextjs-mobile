@@ -11,7 +11,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 export default function Wishlist() {
     const router = useRouter();
     return (
-        <Box p="6">
+        <Box>
             <Navbar title="Wishlist" />
             <List spacing="2">
                 {wishlist.map(item =>

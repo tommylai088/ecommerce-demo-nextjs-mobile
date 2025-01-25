@@ -8,7 +8,6 @@ export default function SearchPage() {
 
     return (
         <Box
-        p="6"
         >
             <Navbar isShowSearchBar />
             <Categories search />

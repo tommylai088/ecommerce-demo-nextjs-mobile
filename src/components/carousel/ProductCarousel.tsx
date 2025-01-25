@@ -2,7 +2,6 @@
 
 import { products } from "@/data/products";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
 import { useLayoutEffect, useState } from "react";
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,7 +13,6 @@ interface IProductCarouselProps {
 }
 
 export default function ProductCarousel({ title }: IProductCarouselProps) {
-    const router = useRouter();
     const [mounted, setMounted] = useState(false);
     useLayoutEffect(() => {
         setMounted(true);
@@ -53,7 +51,6 @@ export default function ProductCarousel({ title }: IProductCarouselProps) {
                     }}
                     modules={[Navigation]}
                     scrollbar={{ draggable: true }}
-                    onClick={() => router.push('/product/details')}
                     breakpoints={{
                         1280: {
                             slidesPerView: 6,

@@ -20,7 +20,7 @@ export default function EditAddress() {
     }
 
     return (
-        <Box p="6">
+        <Box>
             <Navbar title="Edit Address" />
             <FormProvider {...methods}>
                 <form onSubmit={handleSubmit(onSubmit)}>

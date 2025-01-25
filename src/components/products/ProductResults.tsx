@@ -1,13 +1,13 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Icon, IconButton, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import ProductList from "./ProductList";
-import FilterPopup from "../common/FilterPopup";
+import { productFilterLabels, productFilters } from "@/data/product-filters";
+import { Button, Flex, Icon, Text, useDisclosure } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { LuFilter } from "react-icons/lu";
-import { productFilterLabels, productFilters } from "@/data/product-filters";
+import FilterPopup from "../common/FilterPopup";
+import ProductList from "./ProductList";
 
 export default function ProductResults() {
 

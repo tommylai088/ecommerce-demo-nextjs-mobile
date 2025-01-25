@@ -1,8 +1,8 @@
 'use client';
 
+import { ChevronLeftIcon } from "@chakra-ui/icons";
 import { Box, Flex, IconButton, Input, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import { ChevronLeftIcon } from "@chakra-ui/icons";
 import { IoIosHeartEmpty } from "react-icons/io";
 
 interface NavbarProps {

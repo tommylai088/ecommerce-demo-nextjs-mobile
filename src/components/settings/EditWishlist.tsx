@@ -1,8 +1,8 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, FormControl, Grid, GridItem, Icon, IconButton, Input, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import Navbar from "@/components/common/Navbar";
 import ProductList from "@/components/products/ProductList";
+import { Box } from "@chakra-ui/react";
 
 export default function EditWishlist() {
 

@@ -1,16 +1,11 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Icon, IconButton, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import { useState } from "react";
-import { MdKeyboardArrowDown, MdKeyboardArrowRight, MdPlusOne } from "react-icons/md";
-import { HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
+import { Flex, Text } from "@chakra-ui/react";
 import BottomButton from "../common/BottomButton";
-import ProductCarousel from "../carousel/ProductCarousel";
-import ProductReview from "./ProductReview";
 import ProductImageCarousel from "./ProductImageCarousel";
 import ProductInventory from "./ProductInventory";
+import ProductReview from "./ProductReview";
 
 
 export default function ProductResults() {

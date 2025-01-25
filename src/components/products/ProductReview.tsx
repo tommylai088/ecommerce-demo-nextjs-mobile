@@ -1,8 +1,8 @@
 'use client';
 
 import { productReviews } from "@/data/product-reviews";
-import { Avatar, Box, Button, Flex, Icon, IconButton, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
-import { IoIosStarOutline, IoIosStar } from "react-icons/io";
+import { Avatar, Box, Flex, Icon, Text } from "@chakra-ui/react";
+import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 
 export default function ProductReview() {

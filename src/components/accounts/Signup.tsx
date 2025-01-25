@@ -1,10 +1,10 @@
 'use client';
-import { Box, Button, FormControl, IconButton, Input, Text } from "@chakra-ui/react";
-import { FormProvider, useForm } from "react-hook-form";
-import { useRouter } from 'next/navigation'
-import { Link } from "@chakra-ui/next-js";
-import { ChevronLeftIcon } from "@chakra-ui/icons";
 import { route } from "@/constants/route";
+import { ChevronLeftIcon } from "@chakra-ui/icons";
+import { Link } from "@chakra-ui/next-js";
+import { Box, Button, FormControl, IconButton, Input, Text } from "@chakra-ui/react";
+import { useRouter } from 'next/navigation';
+import { FormProvider, useForm } from "react-hook-form";
 
 function Signup() {
 

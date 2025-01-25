@@ -1,12 +1,11 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Grid, GridItem, Icon, IconButton, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/navigation";
-import { Image } from "@chakra-ui/react"
-import { route } from "@/constants/route";
 import Navbar from "@/components/common/Navbar";
+import { route } from "@/constants/route";
 import { payments } from "@/data/payments";
+import { Box, Flex, Icon, Image, List, ListItem, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { MdKeyboardArrowRight } from "react-icons/md";
 export default function Payment() {
 
     const router = useRouter();

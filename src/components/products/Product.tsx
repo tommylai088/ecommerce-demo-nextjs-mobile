@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Text, Icon, Image, BoxProps } from "@chakra-ui/react";
+import { Box, BoxProps, Icon, Image, Text } from "@chakra-ui/react";
 import { IoMdHeart } from "react-icons/io";
 // import { Image } from '@chakra-ui/next-js';
 

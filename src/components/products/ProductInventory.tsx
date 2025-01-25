@@ -1,11 +1,11 @@
 'use client';
 
-import { Box, Button, Flex, Icon, Text, Image, List, ListItem, IconButton, useDisclosure } from "@chakra-ui/react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
-import { useState } from "react";
-import FilterPopup from "../common/FilterPopup";
 import { productInventoryOptionLabels, productInventoryOptions } from "@/data/product-inventory-item";
+import { Box, Flex, Icon, IconButton, List, ListItem, Text, useDisclosure } from "@chakra-ui/react";
+import { useState } from "react";
+import { HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import FilterPopup from "../common/FilterPopup";
 
 export default function ProductInventory({ }) {
     const [value, setValue] = useState<string>('');

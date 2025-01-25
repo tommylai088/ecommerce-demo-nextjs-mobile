@@ -1,10 +1,9 @@
 'use client';
-import { Box, Button, Center, Flex, FormControl, FormErrorMessage, IconButton, Input, Text } from "@chakra-ui/react";
+import { ChevronLeftIcon } from "@chakra-ui/icons";
+import { Box, Button, Flex, FormControl, IconButton, Input, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
-import { ChevronLeftIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/next-js";
 
 function ForgotPassword() {
 

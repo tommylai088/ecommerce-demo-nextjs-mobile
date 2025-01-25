@@ -2,7 +2,7 @@
 
 import { ProductFilterLabels, ProductFilters } from "@/data/product-filters";
 import { ProductInventoryOptionLabels, ProductInventoryOptions } from "@/data/product-inventory-item";
-import { Button, Flex, Modal, ModalContent, ModalOverlay, useDisclosure, Text, IconButton, ModalBody, List, ListItem, Icon, Box } from "@chakra-ui/react";
+import { Box, Button, Flex, Icon, IconButton, List, ListItem, Modal, ModalBody, ModalContent, ModalOverlay, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";

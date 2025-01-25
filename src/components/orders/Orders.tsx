@@ -1,13 +1,11 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Grid, GridItem, Icon, IconButton, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import { Image } from "@chakra-ui/react"
-import { FaWpforms } from "react-icons/fa";
-import { useState } from "react";
 import { route } from "@/constants/route";
+import { Box, Button, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { FaWpforms } from "react-icons/fa";
+import { MdKeyboardArrowRight } from "react-icons/md";
 export default function Orders() {
 
     const router = useRouter();

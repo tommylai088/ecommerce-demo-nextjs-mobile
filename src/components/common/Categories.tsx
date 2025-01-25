@@ -2,9 +2,8 @@
 
 import { route } from "@/constants/route";
 import { productCategories } from "@/data/product-categories";
-import { Box, Flex, List, ListItem, Text, Image, Icon, IconButton } from "@chakra-ui/react";
+import { Box, Flex, IconButton, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import { GiHoodie, GiShorts } from "react-icons/gi";
 
 
 interface ICategoriesProps {

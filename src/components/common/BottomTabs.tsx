@@ -3,7 +3,7 @@
 import { Flex, IconButton } from '@chakra-ui/react';
 import { usePathname, useRouter } from 'next/navigation';
 import { FaWpforms } from 'react-icons/fa';
-import { IoHomeOutline, IoNotificationsOutline, IoPersonOutline } from 'react-icons/io5';
+import { IoHomeOutline, IoPersonOutline } from 'react-icons/io5';
 
 const BottomTabs = () => {
     const router = useRouter();
@@ -36,7 +36,7 @@ const BottomTabs = () => {
                         alignItems="center"
                         justifyContent="center"
                     />
-                    <IconButton
+                    {/* <IconButton
                         onClick={() => router.push('/notifications')}
                         variant="unstyled"
                         height="30px"
@@ -48,7 +48,7 @@ const BottomTabs = () => {
                         alignItems="center"
                         justifyContent="center"
 
-                    />
+                    /> */}
                     <IconButton
                         onClick={() => router.push('/orders')}
                         variant="unstyled"

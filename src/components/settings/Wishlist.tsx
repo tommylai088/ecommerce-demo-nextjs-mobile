@@ -1,12 +1,12 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Grid, GridItem, Icon, IconButton, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import { IoIosHeartEmpty } from "react-icons/io";
 import { route } from "@/constants/route";
 import { wishlist } from "@/data/wishlist";
+import { Box, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Wishlist() {
     const router = useRouter();

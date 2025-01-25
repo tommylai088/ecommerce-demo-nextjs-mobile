@@ -1,11 +1,11 @@
 'use client';
 
-import { Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import { useRouter } from "next/navigation";
-import { productCategories } from "@/data/product-categories";
 import { route } from "@/constants/route";
+import { productCategories } from "@/data/product-categories";
+import { Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function CategoryCarousel() {
     const router = useRouter();

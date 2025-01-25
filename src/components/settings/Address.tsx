@@ -1,11 +1,10 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Grid, GridItem, Icon, IconButton, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
 import { route } from "@/constants/route";
 import { address } from "@/data/address";
+import { Box, Button, List, ListItem, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 export default function Address() {
 
     const router = useRouter();

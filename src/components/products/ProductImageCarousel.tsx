@@ -1,13 +1,11 @@
 'use client';
 
-import { Box, Button, Flex, Icon, Text, Image } from "@chakra-ui/react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import Product from "../products/Product";
-import { useRouter } from "next/navigation";
-import { products } from "@/data/products";
-import { useLayoutEffect, useState } from "react";
 import { productImages } from "@/data/product-images";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { useLayoutEffect, useState } from "react";
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 interface IProductImageCarouselProps {

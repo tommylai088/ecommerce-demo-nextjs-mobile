@@ -1,9 +1,9 @@
 'use client';
 
-import { Avatar, Box, Button, Flex, Icon, IconButton, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import { route } from "@/constants/route";
+import { Avatar, Box, Button, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Settings() {
 

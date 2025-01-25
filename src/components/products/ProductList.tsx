@@ -1,8 +1,8 @@
 'use client';
 
+import { products } from "@/data/products";
 import { Flex, } from "@chakra-ui/react";
 import Product from "./Product";
-import { products } from "@/data/products";
 
 
 export default function ProductList() {

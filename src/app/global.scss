@@ -1,9 +1,12 @@
-main {
-    max-width: 1280px;
-    margin: 0 auto;
-    position: relative;
-
-    > div.content {
-        padding: 1.5rem;
+html {
+    overflow-y: scroll;
+    main {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        
+        > div.content {
+            padding: 1.5rem;
+        }
     }
 }

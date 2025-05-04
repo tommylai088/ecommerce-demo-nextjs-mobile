@@ -3,7 +3,6 @@
 import Navbar from "@/components/common/Navbar";
 import { productFilterLabels, productFilters } from "@/data/product-filters";
 import { Button, Flex, Icon, Text, useDisclosure } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { LuFilter } from "react-icons/lu";
 import FilterPopup from "../common/FilterPopup";
@@ -11,10 +10,8 @@ import ProductList from "./ProductList";
 
 export default function ProductResults() {
 
-    const router = useRouter();
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [value, setValue] = useState<string>('');
-    const [filterValues, setFilterValues] = useState<any>({});
 
     return (
         <>

@@ -1,6 +1,6 @@
 'use client';
 
-import { productReviews } from "@/data/product-reviews";
+import { productReviews, Review } from "@/data/product-reviews";
 import { Avatar, Box, Flex, Icon, Text } from "@chakra-ui/react";
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
@@ -40,7 +40,7 @@ function ReviewList() {
 }
 
 interface IReviewItemProps {
-    item: any;
+    item: Review;
 }
 
 function ReviewItem({ item }: IReviewItemProps) {

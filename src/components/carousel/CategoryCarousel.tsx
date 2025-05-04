@@ -1,6 +1,6 @@
 'use client';
 
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { productCategories } from "@/data/product-categories";
 import { Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function CategoryCarousel() {
     const router = useRouter();
     const [mounted, setMounted] = useState(false);
+    
     useLayoutEffect(() => {
         setMounted(true);
     }, []);
@@ -55,7 +56,7 @@ export default function CategoryCarousel() {
                     {productCategories.map((item) =>
                         <SwiperSlide
                             key={item.name}
-                            onClick={() => router.push(`${route.categories}/${item.name}`)}
+                            onClick={() => router.push(`${routes.categories}/${item.name}`)}
                         >
                             <Flex
                                 gap="1"

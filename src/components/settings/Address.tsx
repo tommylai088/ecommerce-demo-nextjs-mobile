@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from "@/components/common/Navbar";
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { address } from "@/data/address";
 import { Box, Button, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -31,7 +31,7 @@ export default function Address() {
                         </Text>
                         <Button
                             variant="unstyled"
-                            onClick={() => router.push(route.settings.editAddress)}
+                            onClick={() => router.push(routes.settings.editAddress)}
                         >
                             <Text
                                 color="purple.600"

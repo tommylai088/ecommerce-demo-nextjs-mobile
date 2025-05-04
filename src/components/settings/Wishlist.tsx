@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from "@/components/common/Navbar";
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { wishlist } from "@/data/wishlist";
 import { Box, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -10,6 +10,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function Wishlist() {
     const router = useRouter();
+    
     return (
         <Box>
             <Navbar title="Wishlist" />
@@ -17,7 +18,7 @@ export default function Wishlist() {
                 {wishlist.map(item =>
                     <ListItem
                         key={item.id}
-                        onClick={() => router.push(route.settings.editWishlist)}
+                        onClick={() => router.push(routes.settings.editWishlist)}
                         cursor="pointer"
                         borderRadius="8px"
                         p="4"

@@ -14,6 +14,7 @@ interface IProductCarouselProps {
 
 export default function ProductCarousel({ title }: IProductCarouselProps) {
     const [mounted, setMounted] = useState(false);
+    
     useLayoutEffect(() => {
         setMounted(true);
     }, []);

@@ -11,15 +11,10 @@ function ForgotPassword() {
     const {
         handleSubmit,
         register,
-        formState: { errors },
-        setError,
-        clearErrors
     } = methods
 
-
-    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [success, setSuccess] = useState<boolean>(false);
-    const onSubmit = (values: any) => {
+    const onSubmit = () => {
         setSuccess(true);
     }
 
@@ -62,7 +57,6 @@ function ForgotPassword() {
                         <Button
                             borderRadius="25px"
                             height="50px"
-                            isDisabled={isLoading}
                             mt={4}
                             w="100%"
                             type="submit"
@@ -90,7 +84,6 @@ function ForgotPassword() {
                     <Button
                         borderRadius="25px"
                         height="50px"
-                        isDisabled={isLoading}
                         mt={4}
                         w="50%"
                         type="submit"

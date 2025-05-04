@@ -1,6 +1,6 @@
 'use client';
 
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { productCategories } from "@/data/product-categories";
 import { Box, Flex, IconButton, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -33,7 +33,7 @@ export default function Categories({ search }: ICategoriesProps) {
                         alignItems="center"
                         justifyContent="space-between"
                         height="64px"
-                        onClick={() => router.push(`${!search ? `${route.categories}/${item.name}` : route.productResults}`)}
+                        onClick={() => router.push(`${!search ? `${routes.categories}/${item.name}` : routes.productResults}`)}
 
                     >
                         <Flex gap="4" alignItems="center" justifyContent="center">

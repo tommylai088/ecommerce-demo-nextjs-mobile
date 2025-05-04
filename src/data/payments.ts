@@ -1,5 +1,9 @@
+interface PaymentItem {
+    id: number;
+    cardNo: string;
+}
 
-export const payments = [
+export const payments: PaymentItem[] = [
     {
         id: 1,
         cardNo: '**** 1234',

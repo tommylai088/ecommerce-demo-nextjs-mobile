@@ -1,4 +1,4 @@
-export const route: any = {
+export const routes = {
     root: '/',
     search: '/search',
     orders: '/orders',

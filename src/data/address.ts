@@ -1,5 +1,9 @@
 
-export const address = [
+interface Address {
+    id: number;
+    address: string;
+}
+export const address: Address[] = [
     {
         id: 1,
         address: '123 Shreet, ABCD 123',

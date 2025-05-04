@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from "@/components/common/Navbar";
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { Box, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { FaWpforms } from "react-icons/fa";
@@ -146,7 +146,7 @@ export default function Orders() {
             </Flex> */}
             <List spacing="2">
                 <ListItem
-                    onClick={() => router.push(`${route.orders}/123456`)}
+                    onClick={() => router.push(`${routes.orders}/123456`)}
                     cursor="pointer"
                     borderRadius="8px"
                     p="4"
@@ -187,7 +187,7 @@ export default function Orders() {
                     />
                 </ListItem>
                 <ListItem
-                    onClick={() => router.push(`${route.orders}/123456`)}
+                    onClick={() => router.push(`${routes.orders}/123456`)}
                     cursor="pointer"
                     borderRadius="8px"
                     p="4"
@@ -228,7 +228,7 @@ export default function Orders() {
                     />
                 </ListItem>
                 <ListItem
-                    onClick={() => router.push(`${route.orders}/123456`)}
+                    onClick={() => router.push(`${routes.orders}/123456`)}
                     cursor="pointer"
                     borderRadius="8px"
                     p="4"

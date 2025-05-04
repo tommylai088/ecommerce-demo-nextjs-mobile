@@ -1,12 +1,12 @@
 'use client';
 
+import { ProductItem } from '@/data/products';
 import { Box, BoxProps, Icon, Image, Text } from "@chakra-ui/react";
 import { IoMdHeart } from "react-icons/io";
-// import { Image } from '@chakra-ui/next-js';
 
 
 interface IProductProps extends BoxProps {
-    item: any;
+    item: ProductItem;
 }
 
 export default function Product({ item, ...rest }: IProductProps) {
@@ -15,7 +15,6 @@ export default function Product({ item, ...rest }: IProductProps) {
         <Box
             cursor="pointer"
             bg="#F4F4F4"
-            // h="280px"
             w="calc(50% - 20px)"
             position="relative"
             {...rest}

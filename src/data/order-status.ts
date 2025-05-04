@@ -1,5 +1,10 @@
+interface OrderStatus {
+    id: number;
+    name: string;
+    isActive: boolean;
+}
 
-export const orderStatus = [
+export const orderStatus: OrderStatus[] = [
     {
         id: 1,
         name: 'Processing',

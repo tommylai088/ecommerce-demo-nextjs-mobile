@@ -1,5 +1,5 @@
 'use client';
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Button, FormControl, IconButton, Input, Text } from "@chakra-ui/react";
@@ -12,11 +12,9 @@ function Signup() {
     const {
         handleSubmit,
         register,
-        formState: { errors },
     } = methods
 
-    const onSubmit = (values: any) => {
-        console.log(values)
+    const onSubmit = () => {
     }
     const router = useRouter();
 
@@ -90,7 +88,7 @@ function Signup() {
                         </Text>
                     </Button>
                     <Text mt="4" fontSize="12px">
-                        Forgot Password ? <Link href={route.accounts.resetPassword}>
+                        Forgot Password ? <Link href={routes.accounts.resetPassword}>
                             <Text fontWeight="600" as="span">Reset</Text>
                         </Link>
                     </Text>

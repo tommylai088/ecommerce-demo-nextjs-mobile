@@ -1,5 +1,5 @@
 'use client';
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Button, Flex, FormControl, Image, Input, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
@@ -11,11 +11,10 @@ function Signin() {
     const {
         handleSubmit,
         register,
-        formState: { errors },
     } = methods
 
 
-    const onSubmit = (values: any) => {
+    const onSubmit = () => {
     }
 
     const router = useRouter();
@@ -55,14 +54,15 @@ function Signin() {
                         mt={4}
                         w="100%"
                         type="submit"
-                        onClick={() => router.push(route.root)}
+                        onClick={() => router.push(routes.root)}
                     >
                         <Text fontSize="16px">
                             Continue
                         </Text>
                     </Button>
                     <Text mt="4" fontSize="12px">
-                        Dont have an Account ? <Link href="/accounts/signup">
+                        Dont have an Account ?
+                        <Link href="/accounts/signup">
                             <Text fontWeight="600" as="span">Create One</Text>
                         </Link>
                     </Text>

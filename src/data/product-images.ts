@@ -1,5 +1,9 @@
+interface ProductImage {
+    id: number;
+    imageUrl: string;
+}
 
-export const productImages = [
+export const productImages: ProductImage[] = [
     {
         id: 1,
         imageUrl: '/bag.png',

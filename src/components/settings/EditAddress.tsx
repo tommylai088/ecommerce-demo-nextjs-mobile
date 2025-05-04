@@ -11,11 +11,9 @@ export default function EditAddress() {
     const {
         handleSubmit,
         register,
-        formState: { errors },
     } = methods
 
-    const onSubmit = (values: any) => {
-        console.log(values)
+    const onSubmit = () => {
         router.back();
     }
 

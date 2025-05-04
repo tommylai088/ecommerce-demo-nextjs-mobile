@@ -1,11 +1,12 @@
 'use client';
 
 import Navbar from "@/components/common/Navbar";
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { payments } from "@/data/payments";
 import { Box, Flex, Icon, Image, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { MdKeyboardArrowRight } from "react-icons/md";
+
 export default function Payment() {
 
     const router = useRouter();
@@ -24,7 +25,7 @@ export default function Payment() {
                 {payments.map(item =>
                     <ListItem
                         key={item.id}
-                        onClick={() => router.push(route.settings.editPayment)}
+                        onClick={() => router.push(routes.settings.editPayment)}
                         cursor="pointer"
                         borderRadius="8px"
                         p="4"

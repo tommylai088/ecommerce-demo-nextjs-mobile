@@ -1,25 +1,31 @@
 import { GiHoodie, GiShorts, GiSonicShoes } from "react-icons/gi";
 import { IoBagSharp } from "react-icons/io5";
 
-export const productCategories = [
+interface ProductCategory {
+    id: number;
+    name: string;
+    icon: React.ReactElement;
+}
+
+export const productCategories: ProductCategory[] = [
     {
         id: 1,
         name: 'Hoodies',
-        icon: <GiHoodie/>,
+        icon: <GiHoodie />,
     },
     {
         id: 2,
         name: 'Shorts',
-        icon: <GiShorts/>
+        icon: <GiShorts />
     },
     {
         id: 3,
         name: 'Shoes',
-        icon: <GiSonicShoes/>
+        icon: <GiSonicShoes />
     },
     {
         id: 4,
         name: 'Bags',
-        icon: <IoBagSharp/>
+        icon: <IoBagSharp />
     },
 ]

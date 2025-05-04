@@ -1,6 +1,6 @@
 'use client';
 
-import { route } from "@/constants/route";
+import { routes } from "@/constants/routes";
 import { Avatar, Box, Button, Flex, Icon, List, ListItem, Text } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -68,7 +68,7 @@ export default function Settings() {
                     background="#F4F4F4"
                     alignItems="center"
                     justifyContent="space-between"
-                    onClick={() => router.push(route.settings.address)}
+                    onClick={() => router.push(routes.settings.address)}
                 >
                     <Text fontSize="16px">
                         Address
@@ -88,7 +88,7 @@ export default function Settings() {
                     background="#F4F4F4"
                     alignItems="center"
                     justifyContent="space-between"
-                    onClick={() => router.push(route.settings.wishlist)}
+                    onClick={() => router.push(routes.settings.wishlist)}
 
                 >
                     <Text fontSize="16px">
@@ -109,7 +109,7 @@ export default function Settings() {
                     background="#F4F4F4"
                     alignItems="center"
                     justifyContent="space-between"
-                    onClick={() => router.push(route.settings.payment)}
+                    onClick={() => router.push(routes.settings.payment)}
 
                 >
                     <Text fontSize="16px">
@@ -165,7 +165,7 @@ export default function Settings() {
                     <Button
                         variant="unstyled"
                         color="red"
-                        onClick={() => router.push(route.accounts.signin)}
+                        onClick={() => router.push(routes.accounts.signin)}
                     >
                         Sign Out
                     </Button>
